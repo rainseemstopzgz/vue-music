@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const ERR_OK = 0
-const baseURL = process.env.NODE_ENV === 'production' ? 'http://47.102.142.238/music-next/' : '/'
+const baseURL = process.env.NODE_ENV === 'production' ? 'http://47.102.142.238/Lalele/' : '/'
 
 axios.defaults.baseURL = baseURL
 
@@ -14,6 +14,6 @@ export function get(url, params) {
       return serverData.result
     }
   }).catch((e) => {
-      console.log(e)
+      window.console.log(e)
   })
 }
